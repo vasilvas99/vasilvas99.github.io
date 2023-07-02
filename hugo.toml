@@ -12,13 +12,12 @@ paginate=3 # articles per page
 
 [params]
 	mode="auto" # color-mode → light,dark,toggle or auto
-	useCDN=true # don't use CDNs for fonts and icons, instead serve them locally.
+	useCDN=true # use CDNs for fonts and icons, instead serve them locally.
 	subtitle = "A place on the web to store notes and thoughts"
 	mathjax = true # enable MathJax support
 	katex = true # enable KaTeX support
 
 # # Social Tags
-
 [[params.social]]
 name = "GitHub"
 icon = "github"
@@ -29,8 +28,7 @@ name = "Linkedin"
 icon = "linkedin"
 url = "https://www.linkedin.com/in/vasil-ivanov-a131731b7/"
 
-# # Main menu Items
-
+# Main menu Items
 [[menu.main]]
 name = "Home"
 url = "/"
@@ -38,12 +36,12 @@ weight = 1
 
 [[menu.main]]
 name = "Blog"
-url = "/blog-en"
+url = "/blog/en/"
 weight = 2
 
 [[menu.main]]
 name = "Блог"
-url = "/blog-bg"
+url = "/blog/bg/"
 weight = 3
 
 [[menu.main]]
