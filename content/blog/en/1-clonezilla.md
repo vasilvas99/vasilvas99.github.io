@@ -39,17 +39,17 @@ Here are the basic steps for migrating (images)
 
  > Note: Clonezillla will ask you if you want to resize the partitions proportionally. While this might lead to a bit larger Windows system partitions than actually needed, it avoids the need to mess with devmgmt.msc later, so I suggest you go with that.
 
- 7. Power off Clonezilla, remote the bootable USB, and boot into Windows. Your system will be up and running as if nothing happened (just that your Windows drive is magically larger).
+ 7. Power off Clonezilla, remove the bootable USB, and boot into Windows. Your system will be up and running as if nothing happened (just that your Windows drive is magically larger).
 
  8. That's it! Don't forget to turn Windows hibernation back on, as it can significantly improve boot times.
 
  ## Video Guides
 
  
-[Home Tech Adventure](https://www.youtube.com/@hometechadventure4462) has created a two-part YouTube series going over just this topic, such that if you feel lost at some point you feel lost, 
-you can refer to his videos, going through exactly the necessary steps.
+[Home Tech Adventure](https://www.youtube.com/@hometechadventure4462) has created a two-part YouTube series going over just this topic, such that if you feel lost at some point, 
+you can refer to his videos, since he goes through all the steps in exactly the right order.
 
-> Note: He starts with a blank unformatted HDD where, which he uses as a repository for the disk image. If your HDD is already formatted, you can just skip to the "Boot from USB" part of his video.
+> Note: He starts with a blank unformatted HDD which he uses as a repository for the disk image. If your HDD is already formatted, you can just skip to the "Boot from USB" part of his video.
 
 
 {{< youtube Q0A9SqBvy1s >}}
@@ -59,4 +59,6 @@ you can refer to his videos, going through exactly the necessary steps.
 
 ## Conclusion
 
-All in all, Clonezilla's TUI is a bit rough and can be scary for new users, but the overall process of creating and flashing an image is _very_ straightforward if you have prepared a bit upfront. Given that this tool is FOSS, why pay for a commercial piece of software whose only advantage is a pretty GUI 🙂.
+All in all, Clonezilla's TUI is a bit rough and can be scary for new users, but the overall process of creating and flashing an image is _very_ straightforward if you have prepared a bit upfront. 
+Given that this tool is FOSS, why pay for a commercial piece of software whose only advantage is a pretty GUI 🙂.
+
