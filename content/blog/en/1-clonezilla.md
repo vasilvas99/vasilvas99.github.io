@@ -30,7 +30,7 @@ Here are the basic steps for migrating (images)
 3. Power off your machine and boot into Clonezilla.
 
 4. Save a disk image of your NVMe SSD by following the steps at [Save disk image](https://clonezilla.org/show-live-doc-content.php?topic=clonezilla-live/doc/01_Save_disk_image) (they even have nice pictures).
-    > Note: your SSD most likely will be listed as /dev/nvme[NUM]p[NUM] and your HDD as /dev/sd[a,b,c][NUM] so they will be easy to distinguish.
+    > Note: your SSD most likely will be listed as /dev/nvme#p# and your HDD as /dev/sd(a,b,c)# so they will be easy to distinguish.
 
 5. Shutdown and swap the SSDs.
 
@@ -58,5 +58,4 @@ you can refer to his videos going exactly the necessary steps.
 
 ## Conclusion
 
-All in all Clonezilla's TUI is a bit rough and can be scary for new users, but the overall process of creating and flashing and image is _very_ straightforward if you have prepared upfront a bit.
-
+All in all Clonezilla's TUI is a bit rough and can be scary for new users, but the overall process of creating and flashing and image is _very_ straightforward if you have prepared upfront a bit. Given that this tool is FOSS, why pay for a commercial piece of software whose only advantage is a pretty GUI 🙂.
