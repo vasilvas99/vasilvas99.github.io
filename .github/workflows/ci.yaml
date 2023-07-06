@@ -1,0 +1,36 @@
+name: CI workflow
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  Build-documentation:
+    runs-on: ubuntu-latest
+    name: Building documentation
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.110.0"
+          extended: true
+
+      - name: Download theme
+        run: |
+          git clone https://github.com/athul/archie.git themes/archie
+
+      - name: Build
+        run: |
+          hugo
+
+      - name: Publish to GH Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh_pages
