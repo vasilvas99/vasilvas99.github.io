@@ -49,7 +49,7 @@ Here are the basic steps for migrating (images)
 [Home Tech Adventure](https://www.youtube.com/@hometechadventure4462) has created a two-part YouTube series going over just this topic, such that if you feel lost at some point, 
 you can refer to his videos, since he goes through all the steps in exactly the right order.
 
-> Note: He starts with a blank unformatted HDD which he uses as a repository for the disk image. If your HDD is already formatted, you can just skip to the "Boot from USB" part of his video.
+    > Note: He starts with a blank unformatted HDD which he uses as a repository for the disk image. If your HDD is already formatted, you can just skip to the "Boot from USB" part of his video.
 
 
 {{< youtube Q0A9SqBvy1s >}}
