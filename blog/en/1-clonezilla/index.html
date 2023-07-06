@@ -132,12 +132,10 @@ the image but recreate the partition table manually and <code>dd</code> each of 
 </li>
 <li>
 <p>Boot into Clonezilla and restore the disk image by following the steps at <a href="https://clonezilla.org/show-live-doc-content.php?topic=clonezilla-live/doc/02_Restore_disk_image">Restore Disk Image</a>.</p>
-</li>
-</ol>
 <blockquote>
 <p>Note: Clonezillla will ask you if you want to resize the partitions proportionally. While this might lead to a bit larger Windows system partitions than actually needed, it avoids the need to mess with devmgmt.msc later, so I suggest you go with that.</p>
 </blockquote>
-<ol start="7">
+</li>
 <li>
 <p>Power off Clonezilla, remove the bootable USB, and boot into Windows. Your system will be up and running as if nothing happened (just that your Windows drive is magically larger).</p>
 </li>
@@ -148,8 +146,9 @@ the image but recreate the partition table manually and <code>dd</code> each of 
 <h2 id="video-guides">Video Guides</h2>
 <p><a href="https://www.youtube.com/@hometechadventure4462">Home Tech Adventure</a> has created a two-part YouTube series going over just this topic, such that if you feel lost at some point,
 you can refer to his videos, since he goes through all the steps in exactly the right order.</p>
-<pre><code>&gt; Note: He starts with a blank unformatted HDD which he uses as a repository for the disk image. If your HDD is already formatted, you can just skip to the &quot;Boot from USB&quot; part of his video.
-</code></pre>
+<blockquote>
+<p>Note: He starts with a blank unformatted HDD which he uses as a repository for the disk image. If your HDD is already formatted, you can just skip to the &ldquo;Boot from USB&rdquo; part of his video.</p>
+</blockquote>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/Q0A9SqBvy1s" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
