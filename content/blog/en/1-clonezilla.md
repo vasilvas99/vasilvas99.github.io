@@ -37,7 +37,7 @@ Here are the basic steps for migrating (images)
 
 6. Boot into Clonezilla and restore the disk image by following the steps at [Restore Disk Image](https://clonezilla.org/show-live-doc-content.php?topic=clonezilla-live/doc/02_Restore_disk_image).
 
- > Note: Clonezillla will ask you if you want to resize the partitions proportionally. While this might lead to a bit larger Windows system partitions than actually needed, it avoids the need to mess with devmgmt.msc later, so I suggest you go with that.
+     > Note: Clonezillla will ask you if you want to resize the partitions proportionally. While this might lead to a bit larger Windows system partitions than actually needed, it avoids the need to mess with devmgmt.msc later, so I suggest you go with that.
 
  7. Power off Clonezilla, remove the bootable USB, and boot into Windows. Your system will be up and running as if nothing happened (just that your Windows drive is magically larger).
 
@@ -49,7 +49,7 @@ Here are the basic steps for migrating (images)
 [Home Tech Adventure](https://www.youtube.com/@hometechadventure4462) has created a two-part YouTube series going over just this topic, such that if you feel lost at some point, 
 you can refer to his videos, since he goes through all the steps in exactly the right order.
 
-    > Note: He starts with a blank unformatted HDD which he uses as a repository for the disk image. If your HDD is already formatted, you can just skip to the "Boot from USB" part of his video.
+> Note: He starts with a blank unformatted HDD which he uses as a repository for the disk image. If your HDD is already formatted, you can just skip to the "Boot from USB" part of his video.
 
 
 {{< youtube Q0A9SqBvy1s >}}
