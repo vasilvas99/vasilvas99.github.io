@@ -13,7 +13,7 @@ paginate=3 # articles per page
 [params]
 	mode="auto" # color-mode → light,dark,toggle or auto
 	useCDN=true # use CDNs for fonts and icons, instead serve them locally.
-	subtitle = "A place on the web to store notes and thoughts"
+	subtitle = "The personal page of someone who's severely online"
 	mathjax = true # enable MathJax support
 	katex = true # enable KaTeX support
 
