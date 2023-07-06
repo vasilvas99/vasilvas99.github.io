@@ -2,20 +2,20 @@
 <html><head lang="en">
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Migrating Windows to a new SSD with Clonezilla - Vasko&#39;s Homepage</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Recently I have found myself lacking space on my system drive. Luckily fast NVMe M.2 are cheap now. Not so luckily, my system has a single M.2 slot and my Windows installation has so much configured/ installed just the way I like it that I could not fathom the thought of throwing it all away and starting from scratch. (Yeah, yeah I know, backups and stuff.)
-So, the high-level solution was somewhat obvious - dump the drive to an image on my SATA Hard Drive that has plenty of space, swap SSDs, flash the image." />
+	<meta name="description" content="Recently I have found myself lacking space on my system drive. Luckily large, fast NVMe M.2 SSDs are cheap now. Not so luckily, my system has a single M.2 slot, and my Windows installation has so much configured/installed just the way I like it that I could not fathom the thought of throwing it all away and starting from scratch. (Yeah, yeah, I know, backups and stuff.)
+So, the high-level solution was somewhat obvious - dump the drive to an image on my SATA Hard Drive that has plenty of space, swap SSDs, and flash the image." />
 	<meta property="og:image" content=""/>
 	<meta property="og:title" content="Migrating Windows to a new SSD with Clonezilla" />
-<meta property="og:description" content="Recently I have found myself lacking space on my system drive. Luckily fast NVMe M.2 are cheap now. Not so luckily, my system has a single M.2 slot and my Windows installation has so much configured/ installed just the way I like it that I could not fathom the thought of throwing it all away and starting from scratch. (Yeah, yeah I know, backups and stuff.)
-So, the high-level solution was somewhat obvious - dump the drive to an image on my SATA Hard Drive that has plenty of space, swap SSDs, flash the image." />
+<meta property="og:description" content="Recently I have found myself lacking space on my system drive. Luckily large, fast NVMe M.2 SSDs are cheap now. Not so luckily, my system has a single M.2 slot, and my Windows installation has so much configured/installed just the way I like it that I could not fathom the thought of throwing it all away and starting from scratch. (Yeah, yeah, I know, backups and stuff.)
+So, the high-level solution was somewhat obvious - dump the drive to an image on my SATA Hard Drive that has plenty of space, swap SSDs, and flash the image." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://severely.online/blog/en/1-clonezilla/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2023-07-06T00:00:00+00:00" />
 <meta property="article:modified_time" content="2023-07-06T00:00:00+00:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Migrating Windows to a new SSD with Clonezilla"/>
-<meta name="twitter:description" content="Recently I have found myself lacking space on my system drive. Luckily fast NVMe M.2 are cheap now. Not so luckily, my system has a single M.2 slot and my Windows installation has so much configured/ installed just the way I like it that I could not fathom the thought of throwing it all away and starting from scratch. (Yeah, yeah I know, backups and stuff.)
-So, the high-level solution was somewhat obvious - dump the drive to an image on my SATA Hard Drive that has plenty of space, swap SSDs, flash the image."/>
+<meta name="twitter:description" content="Recently I have found myself lacking space on my system drive. Luckily large, fast NVMe M.2 SSDs are cheap now. Not so luckily, my system has a single M.2 slot, and my Windows installation has so much configured/installed just the way I like it that I could not fathom the thought of throwing it all away and starting from scratch. (Yeah, yeah, I know, backups and stuff.)
+So, the high-level solution was somewhat obvious - dump the drive to an image on my SATA Hard Drive that has plenty of space, swap SSDs, and flash the image."/>
 <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
@@ -99,13 +99,12 @@ So, the high-level solution was somewhat obvious - dump the drive to an image on
 		
 
 		<section class="body">
-			<p>Recently I have found myself lacking space on my system drive. Luckily fast NVMe M.2 are cheap now.
-Not so luckily, my system has a single M.2 slot and my Windows installation has so much configured/
-installed just <em>the way I like it</em> that I could not fathom the thought of throwing it all away and
-starting from scratch. (Yeah, yeah I know, backups and stuff.)</p>
-<p>So, the high-level solution was somewhat obvious - dump the drive to an image on my SATA Hard Drive that has plenty of space, swap SSDs, flash the image.</p>
-<p>Of course your drive <code>C:\</code> on Windows is only <em>one</em> of the partitions that Windows creates during
-its installation, in my case in total my SSD had 4 partitions. Soo now I have to not only create/flash
+			<p>Recently I have found myself lacking space on my system drive. Luckily large, fast NVMe M.2 SSDs are cheap now.
+Not so luckily, my system has a single M.2 slot, and my Windows installation has so much configured/installed
+just <em>the way I like it</em> that I could not fathom the thought of throwing it all away and starting from scratch. (Yeah, yeah, I know, backups and stuff.)</p>
+<p>So, the high-level solution was somewhat obvious - dump the drive to an image on my SATA Hard Drive that has plenty of space, swap SSDs, and flash the image.</p>
+<p>Of course, your drive <code>C:\</code> on Windows is only <em>one</em> of the partitions that Windows creates during
+its installation. In my case, my SSD had 4 partitions in total. So now I have to not only create/flash
 the image but recreate the partition table manually and <code>dd</code> each of those partitions separately. The thought of so much manual work was just unbearable.</p>
 <h2 id="enter-clonezilla">Enter Clonezilla!</h2>
 <p>Here are the basic steps for migrating (images)</p>
@@ -114,10 +113,10 @@ the image but recreate the partition table manually and <code>dd</code> each of 
 <p>Download the ISO from the <a href="https://clonezilla.org/downloads/download.php?branch=alternative">Clonezilla website</a> and create a bootable USB with <a href="https://rufus.ie/en/">Rufus</a> for example.</p>
 </li>
 <li>
-<p>Before you turn off your Windows machine and boot into Clonezilla you need to set-up a few things first:</p>
-<p>2.1. Disable <strong>hibernation</strong> - Modern Windows systems do not actually <em>fully</em>  shutdown - they hibernate. Meaning it&rsquo;s not safe for Clonezilla to mount them. For instructions how to do so check: <a href="https://learn.microsoft.com/en-us/troubleshoot/windows-client/deployment/disable-and-re-enable-hibernation">How to disable and re-enable hibernation on a computer that is running Windows
+<p>Before you turn off your Windows machine and boot into Clonezilla, you need to set up a few things first:</p>
+<p>2.1. Disable <strong>hibernation</strong> - Modern Windows systems do not actually <em>fully</em> shutdown - they hibernate. Meaning it&rsquo;s not safe for Clonezilla to mount partitions from them because there still might be processes that are reading/writing. For instructions on how to turn on/off hibernation, check: <a href="https://learn.microsoft.com/en-us/troubleshoot/windows-client/deployment/disable-and-re-enable-hibernation">How to disable and re-enable hibernation on a computer that is running Windows
 </a>.</p>
-<p>2.2. Create a folder on your HDD just for the backup - backups are not a single file, so create folder that you easily and quickly find in a TUI to store the SSD image.</p>
+<p>2.2. Create a folder on your HDD just for the backup - backups are not a single file, so create a folder that you easily and quickly find in a TUI to store the SSD image.</p>
 </li>
 <li>
 <p>Power off your machine and boot into Clonezilla.</p>
@@ -125,22 +124,22 @@ the image but recreate the partition table manually and <code>dd</code> each of 
 <li>
 <p>Save a disk image of your NVMe SSD by following the steps at <a href="https://clonezilla.org/show-live-doc-content.php?topic=clonezilla-live/doc/01_Save_disk_image">Save disk image</a> (they even have nice pictures).</p>
 <blockquote>
-<p>Note: your SSD most likely will be listed as /dev/nvme#p# and your HDD as /dev/sd(a,b,c)# so they will be easy to distinguish.</p>
+<p>Note: your SSD will most likely be listed as /dev/nvme#p# and your HDD as /dev/sd(a,b,c)#, so they will be easy to distinguish from each other.</p>
 </blockquote>
 </li>
 <li>
-<p>Shutdown and swap the SSDs.</p>
+<p>Shut down and swap the SSDs.</p>
 </li>
 <li>
 <p>Boot into Clonezilla and restore the disk image by following the steps at <a href="https://clonezilla.org/show-live-doc-content.php?topic=clonezilla-live/doc/02_Restore_disk_image">Restore Disk Image</a>.</p>
 </li>
 </ol>
 <blockquote>
-<p>Note: Clonezillla will ask you if you want to resize the partitions proportionally. While this might lead to a bit bigger Windows system partitions than actually needed, it avoids the need to mess with devmgmt.msc later, so I suggest you go with that.</p>
+<p>Note: Clonezillla will ask you if you want to resize the partitions proportionally. While this might lead to a bit larger Windows system partitions than actually needed, it avoids the need to mess with devmgmt.msc later, so I suggest you go with that.</p>
 </blockquote>
 <ol start="7">
 <li>
-<p>Poweroff Clonezilla, remote the bootable USB and boot into Windows. Your system will be up and running as if nothing happened (just that your system drive is magically bigger).</p>
+<p>Power off Clonezilla, remote the bootable USB, and boot into Windows. Your system will be up and running as if nothing happened (just that your Windows drive is magically larger).</p>
 </li>
 <li>
 <p>That&rsquo;s it! Don&rsquo;t forget to turn Windows hibernation back on, as it can significantly improve boot times.</p>
@@ -148,9 +147,9 @@ the image but recreate the partition table manually and <code>dd</code> each of 
 </ol>
 <h2 id="video-guides">Video Guides</h2>
 <p><a href="https://www.youtube.com/@hometechadventure4462">Home Tech Adventure</a> has created a two-part YouTube series going over just this topic, such that if you feel lost at some point you feel lost,
-you can refer to his videos going exactly the necessary steps.</p>
+you can refer to his videos, going through exactly the necessary steps.</p>
 <blockquote>
-<p>Note: He starts with a blank unformatted HDD where which he uses as a repository for the disk image. If your HDD is already formatted you can just skip to the &ldquo;Boot from USB&rdquo; part of his video.</p>
+<p>Note: He starts with a blank unformatted HDD where, which he uses as a repository for the disk image. If your HDD is already formatted, you can just skip to the &ldquo;Boot from USB&rdquo; part of his video.</p>
 </blockquote>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -163,12 +162,22 @@ you can refer to his videos going exactly the necessary steps.</p>
 </div>
 
 <h2 id="conclusion">Conclusion</h2>
-<p>All in all Clonezilla&rsquo;s TUI is a bit rough and can be scary for new users, but the overall process of creating and flashing and image is <em>very</em> straightforward if you have prepared upfront a bit. Given that this tool is FOSS, why pay for a commercial piece of software whose only advantage is a pretty GUI 🙂.</p>
+<p>All in all, Clonezilla&rsquo;s TUI is a bit rough and can be scary for new users, but the overall process of creating and flashing an image is <em>very</em> straightforward if you have prepared a bit upfront. Given that this tool is FOSS, why pay for a commercial piece of software whose only advantage is a pretty GUI 🙂.</p>
 
 		</section>
 
 		<div class="post-tags">
 			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/tech">tech</a></li>
+					
+					<li><a href="/tags/general">general</a></li>
+					
+				</ul>
+			</nav>
 			
 			
 		</div>

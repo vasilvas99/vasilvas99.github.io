@@ -11,7 +11,16 @@
     <loc>https://severely.online/blog/</loc>
     <lastmod>2023-07-06T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://severely.online/tags/general/</loc>
+    <lastmod>2023-07-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://severely.online/blog/en/1-clonezilla/</loc>
+    <lastmod>2023-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://severely.online/tags/</loc>
+    <lastmod>2023-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://severely.online/tags/tech/</loc>
     <lastmod>2023-07-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://severely.online/</loc>
@@ -20,7 +29,5 @@
     <loc>https://severely.online/blog/bg/</loc>
   </url><url>
     <loc>https://severely.online/categories/</loc>
-  </url><url>
-    <loc>https://severely.online/tags/</loc>
   </url>
 </urlset>

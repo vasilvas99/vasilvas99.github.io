@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vasko&#39;s Homepage</title>
-    <link>https://severely.online/blog/en/</link>
-    <description>Recent content on Vasko&#39;s Homepage</description>
+    <title>tech on Vasko&#39;s Homepage</title>
+    <link>https://severely.online/tags/tech/</link>
+    <description>Recent content in tech on Vasko&#39;s Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://severely.online/blog/en/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://severely.online/tags/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Migrating Windows to a new SSD with Clonezilla</title>
       <link>https://severely.online/blog/en/1-clonezilla/</link>

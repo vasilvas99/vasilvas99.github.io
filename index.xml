@@ -13,9 +13,9 @@
       <pubDate>Thu, 06 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://severely.online/about/</guid>
-      <description>Hi, I&amp;rsquo;am Vasil - a Masters student in Computational mathematics with a Bachelors in Physical and Theoretical Chemistry.
-My hobby (mostly) work has been in Crystal Growth modelling with some papers currently sent for publication. To see what scientific works I have participated in, check my Orcid Page
-Otherwise, my day job is as a Commiter for the Eclipse Leda Project - a FOSS project for a Software-Defined Vehicle Linux-based OS, backed by my employer Robert Bosch GmbH.</description>
+      <description>Hi, I am Vasil - a Masters&amp;rsquo;s student in Computational mathematics with a Bachelor&amp;rsquo;s in Physical and Theoretical Chemistry.
+My hobby (mostly) work has been in Crystal Growth modeling, with some papers currently sent for publication. To see what scientific works I have participated in, check my ORCID Page
+Otherwise, my day job is as a Commiter for the Eclipse Leda Project - a FOSS project for a Software-Defined Vehicle Linux-based OS backed by my employer Robert Bosch GmbH.</description>
     </item>
     
     <item>
@@ -24,8 +24,8 @@ Otherwise, my day job is as a Commiter for the Eclipse Leda Project - a FOSS pro
       <pubDate>Thu, 06 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://severely.online/blog/en/1-clonezilla/</guid>
-      <description>Recently I have found myself lacking space on my system drive. Luckily fast NVMe M.2 are cheap now. Not so luckily, my system has a single M.2 slot and my Windows installation has so much configured/ installed just the way I like it that I could not fathom the thought of throwing it all away and starting from scratch. (Yeah, yeah I know, backups and stuff.)
-So, the high-level solution was somewhat obvious - dump the drive to an image on my SATA Hard Drive that has plenty of space, swap SSDs, flash the image.</description>
+      <description>Recently I have found myself lacking space on my system drive. Luckily large, fast NVMe M.2 SSDs are cheap now. Not so luckily, my system has a single M.2 slot, and my Windows installation has so much configured/installed just the way I like it that I could not fathom the thought of throwing it all away and starting from scratch. (Yeah, yeah, I know, backups and stuff.)
+So, the high-level solution was somewhat obvious - dump the drive to an image on my SATA Hard Drive that has plenty of space, swap SSDs, and flash the image.</description>
     </item>
     
   </channel>
