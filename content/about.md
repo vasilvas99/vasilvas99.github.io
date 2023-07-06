@@ -21,12 +21,9 @@ I have interest in various Mathematics topics (dynamic systems, scaling behaviou
 The purpose of this blog is to be more of a collection of notes and thoughts on all of those math/phyics/chem/tech topics, so feel free to explore (if I've gotten around to post some content).
 
 
-
 Enough for this first about page for now. Here are socials again, though they are in the footer of 
 this webiste anyway:
 
 - [ORCID](https://orcid.org/0000-0002-7651-2462)
-
 - [Linkedin](https://www.linkedin.com/in/vasil-ivanov-a131731b7)
-
 - [GitHub](https://github.com/vasilvas99)
