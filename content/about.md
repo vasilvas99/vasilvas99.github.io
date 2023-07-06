@@ -11,7 +11,7 @@ My hobby (mostly) work has been in Crystal Growth modelling with some papers cur
 To see what scientific works I have participated in, check my [Orcid Page](https://orcid.org/0000-0002-7651-2462)
 
 Otherwise, my day job is as a [Commiter](https://accounts.eclipse.org/users/vasilvas99) for the [Eclipse Leda Project](https://projects.eclipse.org/projects/automotive.leda) - a FOSS 
-project for a Software-Defined Vehicle Linux-based OS, mainly backed by my employer Robert Bosch GmbH. 
+project for a Software-Defined Vehicle Linux-based OS, backed by my employer Robert Bosch GmbH. 
 
 Mainly, I dabble in Rust, Python, C++ and Bash for work, though when it comes to numerical programming for modelling purposes nothing can beat good ol' Fortran (except Julia I suppose 🙂).
 

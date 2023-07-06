@@ -24,6 +24,7 @@ Here are the basic steps for migrating (images)
 
     2.1. Disable **hibernation** - Modern Windows systems do not actually _fully_  shutdown - they hibernate. Meaning it's not safe for Clonezilla to mount them. For instructions how to do so check: [How to disable and re-enable hibernation on a computer that is running Windows
 ](https://learn.microsoft.com/en-us/troubleshoot/windows-client/deployment/disable-and-re-enable-hibernation).
+
     2.2. Create a folder on your HDD just for the backup - backups are not a single file, so create folder that you easily and quickly find in a TUI to store the SSD image.
 
 
